@@ -62,6 +62,8 @@ This project simulates a BA engagement where I was tasked with defining reportin
 ---
 
 ## Folder structure
+
+```
 supply-chain-analytics/
 ├── README.md
 ├── data/
@@ -73,9 +75,8 @@ supply-chain-analytics/
 ├── analysis/
 │   └── data_cleaning_supply_chain.py
 └── dashboard/
-└── dashboard_screenshot.png
-
----
+    └── dashboard_screenshot.png
+```
 
 ## How to run the analysis
 

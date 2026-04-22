@@ -1,0 +1,1638 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20261.26.0226.1626                               -->
+<workbook original-version='18.1' source-build='2026.1.0 (20261.26.0226.1626)' source-platform='mac' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location id='Book1_17764193026100' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='cleaned_supply_chain' inline='true' name='federated.0tdnp4h1hdqww61gs65gv1iewyuu' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='cleaned_supply_chain' name='textscan.0imhbd90hk15iq170hvl71v7d43c'>
+            <connection class='textscan' directory='/Users/jaysangani/Projects/supply-chain-analytics/data' filename='cleaned_supply_chain.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0imhbd90hk15iq170hvl71v7d43c' name='cleaned_supply_chain.csv' table='[cleaned_supply_chain#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_AU' separator=','>
+            <column datatype='string' name='product_type' ordinal='0' />
+            <column datatype='string' name='sku' ordinal='1' />
+            <column datatype='real' name='price' ordinal='2' />
+            <column datatype='integer' name='availability' ordinal='3' />
+            <column datatype='integer' name='number_of_products_sold' ordinal='4' />
+            <column datatype='real' name='revenue_generated' ordinal='5' />
+            <column datatype='string' name='customer_demographics' ordinal='6' />
+            <column datatype='integer' name='stock_levels' ordinal='7' />
+            <column datatype='integer' name='lead_times' ordinal='8' />
+            <column datatype='integer' name='order_quantities' ordinal='9' />
+            <column datatype='integer' name='shipping_times' ordinal='10' />
+            <column datatype='string' name='shipping_carriers' ordinal='11' />
+            <column datatype='real' name='shipping_costs' ordinal='12' />
+            <column datatype='string' name='supplier_name' ordinal='13' />
+            <column datatype='string' name='location' ordinal='14' />
+            <column datatype='integer' name='lead_time' ordinal='15' />
+            <column datatype='integer' name='production_volumes' ordinal='16' />
+            <column datatype='integer' name='manufacturing_lead_time' ordinal='17' />
+            <column datatype='real' name='manufacturing_costs' ordinal='18' />
+            <column datatype='string' name='inspection_results' ordinal='19' />
+            <column datatype='real' name='defect_rates' ordinal='20' />
+            <column datatype='string' name='transportation_modes' ordinal='21' />
+            <column datatype='string' name='routes' ordinal='22' />
+            <column datatype='real' name='costs' ordinal='23' />
+            <column datatype='integer' name='on_time_flag' ordinal='24' />
+            <column datatype='real' name='profit_margin' ordinal='25' />
+            <column datatype='real' name='cost_efficiency' ordinal='26' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[cleaned_supply_chain.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_AU&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>product_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[product_type]</local-name>
+            <parent-name>[cleaned_supply_chain.csv]</parent-name>
+            <remote-alias>product_type</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[cleaned_supply_chain.csv_8D58E876CDE346CCBA6783D99A13F90A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sku</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[sku]</local-name>
+            <parent-name>[cleaned_supply_chain.csv]</parent-name>
+            <remote-alias>sku</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[cleaned_supply_chain.csv_8D58E876CDE346CCBA6783D99A13F90A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>price</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[price]</local-name>
+            <parent-name>[cleaned_supply_chain.csv]</parent-name>
+            <remote-alias>price</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_supply_chain.csv_8D58E876CDE346CCBA6783D99A13F90A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>availability</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[availability]</local-name>
+            <parent-name>[cleaned_supply_chain.csv]</parent-name>
+            <remote-alias>availability</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_supply_chain.csv_8D58E876CDE346CCBA6783D99A13F90A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>number_of_products_sold</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[number_of_products_sold]</local-name>
+            <parent-name>[cleaned_supply_chain.csv]</parent-name>
+            <remote-alias>number_of_products_sold</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_supply_chain.csv_8D58E876CDE346CCBA6783D99A13F90A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>revenue_generated</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[revenue_generated]</local-name>
+            <parent-name>[cleaned_supply_chain.csv]</parent-name>
+            <remote-alias>revenue_generated</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_supply_chain.csv_8D58E876CDE346CCBA6783D99A13F90A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_demographics</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[customer_demographics]</local-name>
+            <parent-name>[cleaned_supply_chain.csv]</parent-name>
+            <remote-alias>customer_demographics</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[cleaned_supply_chain.csv_8D58E876CDE346CCBA6783D99A13F90A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stock_levels</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[stock_levels]</local-name>
+            <parent-name>[cleaned_supply_chain.csv]</parent-name>
+            <remote-alias>stock_levels</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_supply_chain.csv_8D58E876CDE346CCBA6783D99A13F90A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lead_times</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[lead_times]</local-name>
+            <parent-name>[cleaned_supply_chain.csv]</parent-name>
+            <remote-alias>lead_times</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_supply_chain.csv_8D58E876CDE346CCBA6783D99A13F90A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order_quantities</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[order_quantities]</local-name>
+            <parent-name>[cleaned_supply_chain.csv]</parent-name>
+            <remote-alias>order_quantities</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_supply_chain.csv_8D58E876CDE346CCBA6783D99A13F90A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>shipping_times</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[shipping_times]</local-name>
+            <parent-name>[cleaned_supply_chain.csv]</parent-name>
+            <remote-alias>shipping_times</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_supply_chain.csv_8D58E876CDE346CCBA6783D99A13F90A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>shipping_carriers</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[shipping_carriers]</local-name>
+            <parent-name>[cleaned_supply_chain.csv]</parent-name>
+            <remote-alias>shipping_carriers</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[cleaned_supply_chain.csv_8D58E876CDE346CCBA6783D99A13F90A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>shipping_costs</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[shipping_costs]</local-name>
+            <parent-name>[cleaned_supply_chain.csv]</parent-name>
+            <remote-alias>shipping_costs</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_supply_chain.csv_8D58E876CDE346CCBA6783D99A13F90A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>supplier_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[supplier_name]</local-name>
+            <parent-name>[cleaned_supply_chain.csv]</parent-name>
+            <remote-alias>supplier_name</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[cleaned_supply_chain.csv_8D58E876CDE346CCBA6783D99A13F90A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>location</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[location]</local-name>
+            <parent-name>[cleaned_supply_chain.csv]</parent-name>
+            <remote-alias>location</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[cleaned_supply_chain.csv_8D58E876CDE346CCBA6783D99A13F90A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lead_time</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[lead_time]</local-name>
+            <parent-name>[cleaned_supply_chain.csv]</parent-name>
+            <remote-alias>lead_time</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_supply_chain.csv_8D58E876CDE346CCBA6783D99A13F90A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>production_volumes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[production_volumes]</local-name>
+            <parent-name>[cleaned_supply_chain.csv]</parent-name>
+            <remote-alias>production_volumes</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_supply_chain.csv_8D58E876CDE346CCBA6783D99A13F90A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>manufacturing_lead_time</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[manufacturing_lead_time]</local-name>
+            <parent-name>[cleaned_supply_chain.csv]</parent-name>
+            <remote-alias>manufacturing_lead_time</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_supply_chain.csv_8D58E876CDE346CCBA6783D99A13F90A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>manufacturing_costs</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[manufacturing_costs]</local-name>
+            <parent-name>[cleaned_supply_chain.csv]</parent-name>
+            <remote-alias>manufacturing_costs</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_supply_chain.csv_8D58E876CDE346CCBA6783D99A13F90A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>inspection_results</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[inspection_results]</local-name>
+            <parent-name>[cleaned_supply_chain.csv]</parent-name>
+            <remote-alias>inspection_results</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[cleaned_supply_chain.csv_8D58E876CDE346CCBA6783D99A13F90A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>defect_rates</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[defect_rates]</local-name>
+            <parent-name>[cleaned_supply_chain.csv]</parent-name>
+            <remote-alias>defect_rates</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_supply_chain.csv_8D58E876CDE346CCBA6783D99A13F90A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>transportation_modes</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[transportation_modes]</local-name>
+            <parent-name>[cleaned_supply_chain.csv]</parent-name>
+            <remote-alias>transportation_modes</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[cleaned_supply_chain.csv_8D58E876CDE346CCBA6783D99A13F90A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>routes</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[routes]</local-name>
+            <parent-name>[cleaned_supply_chain.csv]</parent-name>
+            <remote-alias>routes</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[cleaned_supply_chain.csv_8D58E876CDE346CCBA6783D99A13F90A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>costs</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[costs]</local-name>
+            <parent-name>[cleaned_supply_chain.csv]</parent-name>
+            <remote-alias>costs</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_supply_chain.csv_8D58E876CDE346CCBA6783D99A13F90A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>on_time_flag</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[on_time_flag]</local-name>
+            <parent-name>[cleaned_supply_chain.csv]</parent-name>
+            <remote-alias>on_time_flag</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_supply_chain.csv_8D58E876CDE346CCBA6783D99A13F90A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>profit_margin</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[profit_margin]</local-name>
+            <parent-name>[cleaned_supply_chain.csv]</parent-name>
+            <remote-alias>profit_margin</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_supply_chain.csv_8D58E876CDE346CCBA6783D99A13F90A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cost_efficiency</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[cost_efficiency]</local-name>
+            <parent-name>[cleaned_supply_chain.csv]</parent-name>
+            <remote-alias>cost_efficiency</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_supply_chain.csv_8D58E876CDE346CCBA6783D99A13F90A]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='cleaned_supply_chain.csv' datatype='table' name='[__tableau_internal_object_id__].[cleaned_supply_chain.csv_8D58E876CDE346CCBA6783D99A13F90A]' role='measure' type='quantitative' />
+      <column caption='Availability' datatype='integer' name='[availability]' role='measure' type='quantitative' />
+      <column caption='Cost Efficiency' datatype='real' name='[cost_efficiency]' role='measure' type='quantitative' />
+      <column caption='Costs' datatype='real' name='[costs]' role='measure' type='quantitative' />
+      <column caption='Customer Demographics' datatype='string' name='[customer_demographics]' role='dimension' type='nominal' />
+      <column caption='Defect Rates' datatype='real' name='[defect_rates]' role='measure' type='quantitative' />
+      <column caption='Inspection Results' datatype='string' name='[inspection_results]' role='dimension' type='nominal' />
+      <column caption='Lead Time' datatype='integer' name='[lead_time]' role='measure' type='quantitative' />
+      <column caption='Lead Times' datatype='integer' name='[lead_times]' role='measure' type='quantitative' />
+      <column caption='Location' datatype='string' name='[location]' role='dimension' type='nominal' />
+      <column caption='Manufacturing Costs' datatype='real' name='[manufacturing_costs]' role='measure' type='quantitative' />
+      <column caption='Manufacturing Lead Time' datatype='integer' name='[manufacturing_lead_time]' role='measure' type='quantitative' />
+      <column caption='Number Of Products Sold' datatype='integer' name='[number_of_products_sold]' role='measure' type='quantitative' />
+      <column caption='On Time Flag' datatype='integer' name='[on_time_flag]' role='measure' type='quantitative' />
+      <column caption='Order Quantities' datatype='integer' name='[order_quantities]' role='measure' type='quantitative' />
+      <column caption='Price' datatype='real' name='[price]' role='measure' type='quantitative' />
+      <column caption='Product Type' datatype='string' name='[product_type]' role='dimension' type='nominal' />
+      <column caption='Production Volumes' datatype='integer' name='[production_volumes]' role='measure' type='quantitative' />
+      <column caption='Profit Margin' datatype='real' name='[profit_margin]' role='measure' type='quantitative' />
+      <column caption='Revenue Generated' datatype='real' name='[revenue_generated]' role='measure' type='quantitative' />
+      <column caption='Routes' datatype='string' name='[routes]' role='dimension' type='nominal' />
+      <column caption='Shipping Carriers' datatype='string' name='[shipping_carriers]' role='dimension' type='nominal' />
+      <column caption='Shipping Costs' datatype='real' name='[shipping_costs]' role='measure' type='quantitative' />
+      <column caption='Shipping Times' datatype='integer' name='[shipping_times]' role='measure' type='quantitative' />
+      <column caption='Sku' datatype='string' name='[sku]' role='dimension' type='nominal' />
+      <column caption='Stock Levels' datatype='integer' name='[stock_levels]' role='measure' type='quantitative' />
+      <column caption='Supplier Name' datatype='string' name='[supplier_name]' role='dimension' type='nominal' />
+      <column caption='Transportation Modes' datatype='string' name='[transportation_modes]' role='dimension' type='nominal' />
+      <column-instance column='[transportation_modes]' derivation='None' name='[none:transportation_modes:nk]' pivot='key' type='nominal' />
+      <group caption='Action (Supplier Name)' hidden='true' name='[Action (Supplier Name)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[supplier_name]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='/var/folders/17/l2st3kvd0pd73s96svgx0mf00000gn/T/tableau-temp/#TableauTemp_149wfhx1dgup931f7il2t198uooy.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='04/22/2026 01:59:04 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>product_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[product_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>product_type</remote-alias>
+              <ordinal>0</ordinal>
+              <family>cleaned_supply_chain.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[cleaned_supply_chain.csv_8D58E876CDE346CCBA6783D99A13F90A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sku</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[sku]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sku</remote-alias>
+              <ordinal>1</ordinal>
+              <family>cleaned_supply_chain.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>100</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[cleaned_supply_chain.csv_8D58E876CDE346CCBA6783D99A13F90A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>price</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[price]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>price</remote-alias>
+              <ordinal>2</ordinal>
+              <family>cleaned_supply_chain.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>100</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_supply_chain.csv_8D58E876CDE346CCBA6783D99A13F90A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>availability</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[availability]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>availability</remote-alias>
+              <ordinal>3</ordinal>
+              <family>cleaned_supply_chain.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>63</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_supply_chain.csv_8D58E876CDE346CCBA6783D99A13F90A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>number_of_products_sold</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[number_of_products_sold]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>number_of_products_sold</remote-alias>
+              <ordinal>4</ordinal>
+              <family>cleaned_supply_chain.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>96</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_supply_chain.csv_8D58E876CDE346CCBA6783D99A13F90A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>revenue_generated</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[revenue_generated]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>revenue_generated</remote-alias>
+              <ordinal>5</ordinal>
+              <family>cleaned_supply_chain.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>100</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_supply_chain.csv_8D58E876CDE346CCBA6783D99A13F90A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>customer_demographics</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[customer_demographics]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>customer_demographics</remote-alias>
+              <ordinal>6</ordinal>
+              <family>cleaned_supply_chain.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[cleaned_supply_chain.csv_8D58E876CDE346CCBA6783D99A13F90A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>stock_levels</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[stock_levels]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>stock_levels</remote-alias>
+              <ordinal>7</ordinal>
+              <family>cleaned_supply_chain.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>65</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_supply_chain.csv_8D58E876CDE346CCBA6783D99A13F90A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>lead_times</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[lead_times]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>lead_times</remote-alias>
+              <ordinal>8</ordinal>
+              <family>cleaned_supply_chain.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>29</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_supply_chain.csv_8D58E876CDE346CCBA6783D99A13F90A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>order_quantities</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[order_quantities]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>order_quantities</remote-alias>
+              <ordinal>9</ordinal>
+              <family>cleaned_supply_chain.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>61</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_supply_chain.csv_8D58E876CDE346CCBA6783D99A13F90A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>shipping_times</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[shipping_times]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>shipping_times</remote-alias>
+              <ordinal>10</ordinal>
+              <family>cleaned_supply_chain.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_supply_chain.csv_8D58E876CDE346CCBA6783D99A13F90A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>shipping_carriers</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[shipping_carriers]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>shipping_carriers</remote-alias>
+              <ordinal>11</ordinal>
+              <family>cleaned_supply_chain.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[cleaned_supply_chain.csv_8D58E876CDE346CCBA6783D99A13F90A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>shipping_costs</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[shipping_costs]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>shipping_costs</remote-alias>
+              <ordinal>12</ordinal>
+              <family>cleaned_supply_chain.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>100</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_supply_chain.csv_8D58E876CDE346CCBA6783D99A13F90A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>supplier_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[supplier_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>supplier_name</remote-alias>
+              <ordinal>13</ordinal>
+              <family>cleaned_supply_chain.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[cleaned_supply_chain.csv_8D58E876CDE346CCBA6783D99A13F90A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>location</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[location]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>location</remote-alias>
+              <ordinal>14</ordinal>
+              <family>cleaned_supply_chain.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[cleaned_supply_chain.csv_8D58E876CDE346CCBA6783D99A13F90A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>lead_time</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[lead_time]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>lead_time</remote-alias>
+              <ordinal>15</ordinal>
+              <family>cleaned_supply_chain.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>29</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_supply_chain.csv_8D58E876CDE346CCBA6783D99A13F90A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>production_volumes</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[production_volumes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>production_volumes</remote-alias>
+              <ordinal>16</ordinal>
+              <family>cleaned_supply_chain.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>96</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_supply_chain.csv_8D58E876CDE346CCBA6783D99A13F90A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>manufacturing_lead_time</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[manufacturing_lead_time]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>manufacturing_lead_time</remote-alias>
+              <ordinal>17</ordinal>
+              <family>cleaned_supply_chain.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>30</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_supply_chain.csv_8D58E876CDE346CCBA6783D99A13F90A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>manufacturing_costs</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[manufacturing_costs]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>manufacturing_costs</remote-alias>
+              <ordinal>18</ordinal>
+              <family>cleaned_supply_chain.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>100</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_supply_chain.csv_8D58E876CDE346CCBA6783D99A13F90A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>inspection_results</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[inspection_results]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>inspection_results</remote-alias>
+              <ordinal>19</ordinal>
+              <family>cleaned_supply_chain.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[cleaned_supply_chain.csv_8D58E876CDE346CCBA6783D99A13F90A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>defect_rates</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[defect_rates]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>defect_rates</remote-alias>
+              <ordinal>20</ordinal>
+              <family>cleaned_supply_chain.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>100</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_supply_chain.csv_8D58E876CDE346CCBA6783D99A13F90A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>transportation_modes</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[transportation_modes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>transportation_modes</remote-alias>
+              <ordinal>21</ordinal>
+              <family>cleaned_supply_chain.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[cleaned_supply_chain.csv_8D58E876CDE346CCBA6783D99A13F90A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>routes</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[routes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>routes</remote-alias>
+              <ordinal>22</ordinal>
+              <family>cleaned_supply_chain.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[cleaned_supply_chain.csv_8D58E876CDE346CCBA6783D99A13F90A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>costs</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[costs]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>costs</remote-alias>
+              <ordinal>23</ordinal>
+              <family>cleaned_supply_chain.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>100</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_supply_chain.csv_8D58E876CDE346CCBA6783D99A13F90A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>on_time_flag</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[on_time_flag]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>on_time_flag</remote-alias>
+              <ordinal>24</ordinal>
+              <family>cleaned_supply_chain.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_supply_chain.csv_8D58E876CDE346CCBA6783D99A13F90A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>profit_margin</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[profit_margin]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>profit_margin</remote-alias>
+              <ordinal>25</ordinal>
+              <family>cleaned_supply_chain.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>100</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_supply_chain.csv_8D58E876CDE346CCBA6783D99A13F90A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>cost_efficiency</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[cost_efficiency]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>cost_efficiency</remote-alias>
+              <ordinal>26</ordinal>
+              <family>cleaned_supply_chain.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>79</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_supply_chain.csv_8D58E876CDE346CCBA6783D99A13F90A]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:transportation_modes:nk]' palette='blue_10_0' type='palette'>
+            <map to='#2a5783'>
+              <bucket>&quot;Sea&quot;</bucket>
+            </map>
+            <map to='#5081ae'>
+              <bucket>&quot;Road&quot;</bucket>
+            </map>
+            <map to='#7eaed3'>
+              <bucket>&quot;Rail&quot;</bucket>
+            </map>
+            <map to='#b9ddf1'>
+              <bucket>&quot;Air&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Australia&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='cleaned_supply_chain.csv' id='cleaned_supply_chain.csv_8D58E876CDE346CCBA6783D99A13F90A'>
+            <properties context=''>
+              <relation connection='textscan.0imhbd90hk15iq170hvl71v7d43c' name='cleaned_supply_chain.csv' table='[cleaned_supply_chain#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_AU' separator=','>
+                  <column datatype='string' name='product_type' ordinal='0' />
+                  <column datatype='string' name='sku' ordinal='1' />
+                  <column datatype='real' name='price' ordinal='2' />
+                  <column datatype='integer' name='availability' ordinal='3' />
+                  <column datatype='integer' name='number_of_products_sold' ordinal='4' />
+                  <column datatype='real' name='revenue_generated' ordinal='5' />
+                  <column datatype='string' name='customer_demographics' ordinal='6' />
+                  <column datatype='integer' name='stock_levels' ordinal='7' />
+                  <column datatype='integer' name='lead_times' ordinal='8' />
+                  <column datatype='integer' name='order_quantities' ordinal='9' />
+                  <column datatype='integer' name='shipping_times' ordinal='10' />
+                  <column datatype='string' name='shipping_carriers' ordinal='11' />
+                  <column datatype='real' name='shipping_costs' ordinal='12' />
+                  <column datatype='string' name='supplier_name' ordinal='13' />
+                  <column datatype='string' name='location' ordinal='14' />
+                  <column datatype='integer' name='lead_time' ordinal='15' />
+                  <column datatype='integer' name='production_volumes' ordinal='16' />
+                  <column datatype='integer' name='manufacturing_lead_time' ordinal='17' />
+                  <column datatype='real' name='manufacturing_costs' ordinal='18' />
+                  <column datatype='string' name='inspection_results' ordinal='19' />
+                  <column datatype='real' name='defect_rates' ordinal='20' />
+                  <column datatype='string' name='transportation_modes' ordinal='21' />
+                  <column datatype='string' name='routes' ordinal='22' />
+                  <column datatype='real' name='costs' ordinal='23' />
+                  <column datatype='integer' name='on_time_flag' ordinal='24' />
+                  <column datatype='real' name='profit_margin' ordinal='25' />
+                  <column datatype='real' name='cost_efficiency' ordinal='26' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1_1A39043A831546B19819A686EB4E2933]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Supply Chain Operations — KPI Dashboard' type='sheet' worksheet='Revenue by Product' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Supply Chain Operations — KPI Dashboard' />
+      </command>
+    </action>
+    <action caption='Filter 2 (generated)' name='[Action2_5FE417F4F40C403F9B853DFE5E4A6969]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Supply Chain Operations — KPI Dashboard' type='sheet' worksheet='Defect Rate by Supplier' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Supply Chain Operations — KPI Dashboard' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Defect Rate by Supplier'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_supply_chain' name='federated.0tdnp4h1hdqww61gs65gv1iewyuu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0tdnp4h1hdqww61gs65gv1iewyuu'>
+            <column caption='Defect Rates' datatype='real' name='[defect_rates]' role='measure' type='quantitative' />
+            <column-instance column='[supplier_name]' derivation='None' name='[none:supplier_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[defect_rates]' derivation='Sum' name='[sum:defect_rates:qk]' pivot='key' type='quantitative' />
+            <column caption='Supplier Name' datatype='string' name='[supplier_name]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0tdnp4h1hdqww61gs65gv1iewyuu].[none:supplier_name:nk]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0tdnp4h1hdqww61gs65gv1iewyuu].[sum:defect_rates:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#4e79a7' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0tdnp4h1hdqww61gs65gv1iewyuu].[none:supplier_name:nk]</rows>
+        <cols>[federated.0tdnp4h1hdqww61gs65gv1iewyuu].[sum:defect_rates:qk]</cols>
+      </table>
+      <simple-id uuid='{270526C0-9B92-4398-B511-026336873224}' />
+    </worksheet>
+    <worksheet name='KPI Defect Rate'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontsize='18'>Avg Defect Rate</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_supply_chain' name='federated.0tdnp4h1hdqww61gs65gv1iewyuu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0tdnp4h1hdqww61gs65gv1iewyuu'>
+            <column caption='Defect Rates' datatype='real' name='[defect_rates]' role='measure' type='quantitative' />
+            <column-instance column='[defect_rates]' derivation='Sum' name='[sum:defect_rates:qk]' pivot='key' type='quantitative' />
+            <column caption='Supplier Name' datatype='string' name='[supplier_name]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0tdnp4h1hdqww61gs65gv1iewyuu].[Action (Supplier Name)]'>
+            <groupfilter function='level-members' level='[supplier_name]' user:ui-action-filter='[Action2_5FE417F4F40C403F9B853DFE5E4A6969]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0tdnp4h1hdqww61gs65gv1iewyuu].[Action (Supplier Name)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <encodings>
+              <text column='[federated.0tdnp4h1hdqww61gs65gv1iewyuu].[sum:defect_rates:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{4D08CF7F-3DCD-40CC-AEEB-CE5651CD9C18}' />
+    </worksheet>
+    <worksheet name='KPI Revenue'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='18'>Total Revenue</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_supply_chain' name='federated.0tdnp4h1hdqww61gs65gv1iewyuu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0tdnp4h1hdqww61gs65gv1iewyuu'>
+            <column caption='Revenue Generated' datatype='real' name='[revenue_generated]' role='measure' type='quantitative' />
+            <column-instance column='[revenue_generated]' derivation='Sum' name='[sum:revenue_generated:qk]' pivot='key' type='quantitative' />
+            <column caption='Supplier Name' datatype='string' name='[supplier_name]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0tdnp4h1hdqww61gs65gv1iewyuu].[Action (Supplier Name)]'>
+            <groupfilter function='level-members' level='[supplier_name]' user:ui-action-filter='[Action2_5FE417F4F40C403F9B853DFE5E4A6969]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0tdnp4h1hdqww61gs65gv1iewyuu].[Action (Supplier Name)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <encodings>
+              <text column='[federated.0tdnp4h1hdqww61gs65gv1iewyuu].[sum:revenue_generated:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{66450AE1-5A40-483A-B389-9A8B6DC7798B}' />
+    </worksheet>
+    <worksheet name='KPI Shipping Cost'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontsize='18'>Avg Shipping Cost</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_supply_chain' name='federated.0tdnp4h1hdqww61gs65gv1iewyuu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0tdnp4h1hdqww61gs65gv1iewyuu'>
+            <column caption='Shipping Costs' datatype='real' name='[shipping_costs]' role='measure' type='quantitative' />
+            <column-instance column='[shipping_costs]' derivation='Sum' name='[sum:shipping_costs:qk]' pivot='key' type='quantitative' />
+            <column caption='Supplier Name' datatype='string' name='[supplier_name]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0tdnp4h1hdqww61gs65gv1iewyuu].[Action (Supplier Name)]'>
+            <groupfilter function='level-members' level='[supplier_name]' user:ui-action-filter='[Action2_5FE417F4F40C403F9B853DFE5E4A6969]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0tdnp4h1hdqww61gs65gv1iewyuu].[Action (Supplier Name)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0tdnp4h1hdqww61gs65gv1iewyuu].[sum:shipping_costs:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{3DC33AB6-4844-46D2-B68B-4CC6B4132E34}' />
+    </worksheet>
+    <worksheet name='Revenue by Product'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_supply_chain' name='federated.0tdnp4h1hdqww61gs65gv1iewyuu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0tdnp4h1hdqww61gs65gv1iewyuu'>
+            <column-instance column='[product_type]' derivation='None' name='[none:product_type:nk]' pivot='key' type='nominal' />
+            <column caption='Product Type' datatype='string' name='[product_type]' role='dimension' type='nominal' />
+            <column caption='Revenue Generated' datatype='real' name='[revenue_generated]' role='measure' type='quantitative' />
+            <column-instance column='[revenue_generated]' derivation='Sum' name='[sum:revenue_generated:qk]' pivot='key' type='quantitative' />
+            <column caption='Supplier Name' datatype='string' name='[supplier_name]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0tdnp4h1hdqww61gs65gv1iewyuu].[Action (Supplier Name)]'>
+            <groupfilter function='level-members' level='[supplier_name]' user:ui-action-filter='[Action2_5FE417F4F40C403F9B853DFE5E4A6969]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0tdnp4h1hdqww61gs65gv1iewyuu].[none:product_type:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0tdnp4h1hdqww61gs65gv1iewyuu].[sum:revenue_generated:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0tdnp4h1hdqww61gs65gv1iewyuu].[Action (Supplier Name)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='height-header' value='10' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0tdnp4h1hdqww61gs65gv1iewyuu].[sum:revenue_generated:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0tdnp4h1hdqww61gs65gv1iewyuu].[none:product_type:nk]</rows>
+        <cols>[federated.0tdnp4h1hdqww61gs65gv1iewyuu].[sum:revenue_generated:qk]</cols>
+      </table>
+      <simple-id uuid='{C1DF5842-A432-4BFF-8B49-B19669AAFA63}' />
+    </worksheet>
+    <worksheet name='Shipping Cost by Mode'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_supply_chain' name='federated.0tdnp4h1hdqww61gs65gv1iewyuu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0tdnp4h1hdqww61gs65gv1iewyuu'>
+            <column-instance column='[transportation_modes]' derivation='None' name='[none:transportation_modes:nk]' pivot='key' type='nominal' />
+            <column caption='Shipping Costs' datatype='real' name='[shipping_costs]' role='measure' type='quantitative' />
+            <column-instance column='[shipping_costs]' derivation='Sum' name='[sum:shipping_costs:qk]' pivot='key' type='quantitative' />
+            <column caption='Supplier Name' datatype='string' name='[supplier_name]' role='dimension' type='nominal' />
+            <column caption='Transportation Modes' datatype='string' name='[transportation_modes]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0tdnp4h1hdqww61gs65gv1iewyuu].[Action (Supplier Name)]'>
+            <groupfilter function='level-members' level='[supplier_name]' user:ui-action-filter='[Action2_5FE417F4F40C403F9B853DFE5E4A6969]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0tdnp4h1hdqww61gs65gv1iewyuu].[Action (Supplier Name)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+        </panes>
+        <rows>[federated.0tdnp4h1hdqww61gs65gv1iewyuu].[sum:shipping_costs:qk]</rows>
+        <cols>[federated.0tdnp4h1hdqww61gs65gv1iewyuu].[none:transportation_modes:nk]</cols>
+      </table>
+      <simple-id uuid='{03DC8D14-FCF6-4E75-8E79-676096428A7D}' />
+    </worksheet>
+    <worksheet name='Stock Levels'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_supply_chain' name='federated.0tdnp4h1hdqww61gs65gv1iewyuu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0tdnp4h1hdqww61gs65gv1iewyuu'>
+            <column-instance column='[product_type]' derivation='None' name='[none:product_type:nk]' pivot='key' type='nominal' />
+            <column caption='Product Type' datatype='string' name='[product_type]' role='dimension' type='nominal' />
+            <column caption='Stock Levels' datatype='integer' name='[stock_levels]' role='measure' type='quantitative' />
+            <column-instance column='[stock_levels]' derivation='Sum' name='[sum:stock_levels:qk]' pivot='key' type='quantitative' />
+            <column caption='Supplier Name' datatype='string' name='[supplier_name]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0tdnp4h1hdqww61gs65gv1iewyuu].[Action (Supplier Name)]'>
+            <groupfilter function='level-members' level='[supplier_name]' user:ui-action-filter='[Action2_5FE417F4F40C403F9B853DFE5E4A6969]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0tdnp4h1hdqww61gs65gv1iewyuu].[Action (Supplier Name)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0tdnp4h1hdqww61gs65gv1iewyuu].[sum:stock_levels:qk]' palette='blue_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <reference-line axis-column='[federated.0tdnp4h1hdqww61gs65gv1iewyuu].[sum:stock_levels:qk]' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-pane' value-column='[federated.0tdnp4h1hdqww61gs65gv1iewyuu].[sum:stock_levels:qk]' z-order='1' />
+          </pane>
+        </panes>
+        <rows>[federated.0tdnp4h1hdqww61gs65gv1iewyuu].[sum:stock_levels:qk]</rows>
+        <cols>[federated.0tdnp4h1hdqww61gs65gv1iewyuu].[none:product_type:nk]</cols>
+      </table>
+      <simple-id uuid='{4CA40534-2846-47F9-BEE6-D9FBD0D0ADF6}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Supply Chain Operations — KPI Dashboard'>
+      <style />
+      <size maxheight='800' maxwidth='1200' minheight='800' minwidth='1200' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='85375' id='9' param='horz' type-v2='layout-flow' w='98666' x='667' y='13625'>
+            <zone h='85375' id='7' type-v2='layout-basic' w='85333' x='667' y='13625'>
+              <zone h='42688' id='3' name='Revenue by Product' w='42666' x='43334' y='13625'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='42688' id='5' name='Defect Rate by Supplier' w='42667' x='667' y='13625'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='42687' id='6' name='Shipping Cost by Mode' w='42667' x='667' y='56313'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='42687' id='11' name='Stock Levels' w='42666' x='43334' y='56313'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='85375' id='8' is-fixed='true' param='vert' type-v2='layout-flow' w='13333' x='86000' y='13625'>
+              <zone h='2750' id='10' name='Shipping Cost by Mode' pane-specification-id='0' param='[federated.0tdnp4h1hdqww61gs65gv1iewyuu].[none:transportation_modes:nk]' type-v2='color' w='13333' x='86000' y='13625'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='2750' id='12' name='Stock Levels' pane-specification-id='0' param='[federated.0tdnp4h1hdqww61gs65gv1iewyuu].[sum:stock_levels:qk]' type-v2='color' w='13333' x='86000' y='16375'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone forceUpdate='true' h='4000' id='13' type-v2='text' w='98666' x='667' y='1000'>
+            <formatted-text>
+              <run fontalignment='1' fontcolor='#4e79a7' fontname='Anthropic Sans,-apple-system,system-ui,Segoe UI,sans-serif' fontsize='18'>Supply Chain Operations — KPI Dashboard</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='8625' id='18' name='KPI Revenue' w='31750' x='667' y='5000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='8625' id='19' name='KPI Defect Rate' w='35250' x='32417' y='5000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='8625' id='20' name='KPI Shipping Cost' w='31666' x='67667' y='5000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1400' minheight='1400' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='17' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='16' param='vert' type-v2='layout-flow' w='98666' x='667' y='1000'>
+                <zone forceUpdate='true' h='4000' id='13' type-v2='text' w='98666' x='667' y='1000'>
+                  <formatted-text>
+                    <run fontalignment='1' fontcolor='#4e79a7' fontname='Anthropic Sans,-apple-system,system-ui,Segoe UI,sans-serif' fontsize='18'>Supply Chain Operations — KPI Dashboard</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='47000' id='5' is-fixed='true' name='Defect Rate by Supplier' w='42667' x='667' y='5000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='47000' id='3' is-fixed='true' name='Revenue by Product' w='42666' x='43334' y='5000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='47000' id='6' is-fixed='true' name='Shipping Cost by Mode' w='42667' x='667' y='52000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='13250' id='10' name='Shipping Cost by Mode' pane-specification-id='0' param='[federated.0tdnp4h1hdqww61gs65gv1iewyuu].[none:transportation_modes:nk]' type-v2='color' w='13333' x='86000' y='5000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='47000' id='11' is-fixed='true' name='Stock Levels' w='42666' x='43334' y='52000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8125' id='12' name='Stock Levels' pane-specification-id='0' param='[federated.0tdnp4h1hdqww61gs65gv1iewyuu].[sum:stock_levels:qk]' type-v2='color' w='13333' x='86000' y='18250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{4670A7F7-BA89-460C-B6EB-6A419313C5DD}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Revenue by Product'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{33A5EDBC-2EE4-4FB8-917C-8A66CA8C9866}' />
+    </window>
+    <window class='worksheet' name='Defect Rate by Supplier'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{911BA498-D71F-4514-9F20-D56121C3D11C}' />
+    </window>
+    <window class='worksheet' name='Shipping Cost by Mode'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E3A82576-1F79-4567-A3D5-6C15E3A2A93A}' />
+    </window>
+    <window class='worksheet' name='Stock Levels'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A74ADB7B-29D2-4285-8B0D-A043B49987C4}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Supply Chain Operations — KPI Dashboard'>
+      <viewpoints>
+        <viewpoint name='Defect Rate by Supplier' />
+        <viewpoint name='KPI Defect Rate'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI Revenue'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI Shipping Cost'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Revenue by Product'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Shipping Cost by Mode'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Stock Levels'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{0E7DBB17-FCDE-4C15-901D-6D55C5E30DAE}' />
+    </window>
+    <window class='worksheet' name='KPI Revenue'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{FDD32FFA-90A6-404F-9B3F-6BF2D46BFBAD}' />
+    </window>
+    <window class='worksheet' name='KPI Defect Rate'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E2A324E1-AEAC-4A32-AC50-BF41E7A46648}' />
+    </window>
+    <window class='worksheet' name='KPI Shipping Cost'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A8C8A664-E796-4A7C-9697-6797EC250FD0}' />
+    </window>
+  </windows>
+</workbook>
